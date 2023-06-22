@@ -32,38 +32,13 @@
 
   <body>
 
+    <h1>NFC員工證資料讀取</h1>
+  
+    <button onclick="initNFC()">初始化NFC</button>
+    <button onclick="startReading()">開始讀取NFC資料</button>
+    <button onclick="stopReading()">停止讀取NFC資料</button>
     
-    <!-- V1 -->
-    <!-- <h1>NFC 狀態</h1>
-    <div class="status" id="status">
-      <i class="fas fa-tag"></i> NFC 狀態：未讀取
-    </div> -->
-
-    <!-- V2 -->
-    <!-- <h1>NFC 狀態</h1>
-
-    <div class="status" id="status"></div>
-
-    <input type="text" id="valueInput" disabled>
-    <br>
-
-    <button id="scanButton" onclick="startNfcScan()">
-      <i class="fas fa-search"></i> 開啟 NFC 掃描
-    </button> -->
-
-    <!-- V3.1 -->
-    <h1>NFC 狀態</h1>
-
-    <div class="status" id="status"></div>
-  
-    <input type="text" id="valueInput" disabled>
-    <br>
-  
-    <button id="scanButton" onclick="startNfcScan()">
-      <i class="fas fa-search"></i> 開啟 NFC 掃描
-    </button>
-  
-    <div id="format"></div>
+    <div id="nfcDataContainer"></div>
     
 
 

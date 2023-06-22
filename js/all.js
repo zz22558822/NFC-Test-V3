@@ -83,7 +83,7 @@
 //   }
 // }
 
-// V3.1
+// V3.1.1
 function startNfcScan() {
   if ('NDEFReader' in window) {
     const statusElement = document.getElementById('status');
@@ -102,7 +102,7 @@ function startNfcScan() {
 
       for (const record of records) {
         console.log("Record data:", record.data);
-        const decoder = new TextDecoder(record.encoding);
+        const decoder = new TextDecoder(record.encoding || 'utf-8'); // 使用預設的編碼標籤 'utf-8'
         const value = decoder.decode(record.data);
 
         // 將讀取到的值設定到數值框中
